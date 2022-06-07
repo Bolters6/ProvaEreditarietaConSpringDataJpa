@@ -15,6 +15,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @SuperBuilder
 @Inheritance(strategy = InheritanceType.JOINED)
+//Tambien se puede usar @MappedSuperClass para que esta clase, osea la clase padre no sea una entidad si no solo un objeto extendible , todo objeto 
+// que extiende esta super clase podra ser una entidad que toma sus propiedades sin problemas
 public class Utente implements Serializable {
 
     @Id
